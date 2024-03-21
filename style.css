@@ -1,8 +1,8 @@
 .custom-line {
   margin-top: 120px;
-  height: 1px; 
-  background-color: black; 
-  width: 100%; 
+  height: 1px;
+  background-color: black;
+  width: 100%;
 }
 .animation-container {
   font-size: 24px;
@@ -41,22 +41,21 @@
 }
 
 .social-icon {
-  width: 60px; 
-  height: 60px; 
+  width: 60px;
+  height: 60px;
   border: 2px solid #000;
-  border-radius: 6px; 
-  background-color: black; 
+  border-radius: 6px;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.3s; 
-  color: white; 
+  transition: opacity 0.3s;
+  color: white;
 }
 
-
 .container {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .m {
@@ -107,22 +106,22 @@
 }
 
 .box1:hover {
-  background-color: #0d0d0d; 
+  background-color: #0d0d0d;
   background-color: #121212;
 }
 .box1:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-/* Style the image */
 .box1 img {
-  width: 100%; 
-  display: block; 
+  width: 100%;
+  display: block;
   border-radius: 8px;
 }
 
 .content {
   padding-top: 10px;
 }
+
 h2 {
   font-size: 18px;
   color: red;
@@ -131,15 +130,14 @@ h2 {
 
 .container1 {
   display: flex;
-
   justify-content: center;
 }
 
 .circle1 {
-  width: 45px; 
-  height: 45px; 
-  background-color: black; 
-  border-radius: 50%; 
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +145,7 @@ h2 {
 }
 .circle img {
   max-width: 100%;
-  max-height: 100%; 
+  max-height: 100%;
 }
 
 .custom-border {
@@ -161,15 +159,6 @@ h2 {
   margin-bottom: 60px;
 }
 
-.container {
-  display: flex;
-}
-.vertical-line {
-  width: 6px;
-  height: 800px;
-  background-color: black;
-  margin-right: 80px;
-}
 .box2 {
   margin-top: 30px;
   width: 1000px;
@@ -177,7 +166,13 @@ h2 {
   background-color: #171717;
   border-radius: 8px;
   text-align: left;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  flex: 1;
+  position: relative;
 }
+
 .box2 h2 {
   margin-top: 50px;
 }
@@ -191,22 +186,22 @@ h2 {
   background-color: black;
 }
 .box3 {
-  width: 500px; 
+  width: 500px;
 
   height: 580px;
-  padding: 40px; 
+  padding: 40px;
   background-color: #121212;
   background-color: #171717;
   border-radius: 8px;
 }
 .box3 img {
-  width: 100%; 
-  display: block; 
+  width: 100%;
+  display: block;
   border-radius: 8px;
 }
 
 .box4 {
-  padding: 40px; 
+  padding: 40px;
   background-color: #121212;
   background-color: #171717;
   border-radius: 8px;
@@ -235,10 +230,10 @@ h2 {
   padding: 50px;
 }
 .circle2 {
-  padding-left: 220px; 
+  padding-left: 220px;
 }
 .circle img {
-  max-width: 100%; 
+  max-width: 100%;
   max-height: 100%;
 }
 .c1 {
@@ -254,10 +249,12 @@ h2 {
 .skills-container {
   text-align: center;
   margin: 50px;
+  display: none;
+  width: 100%;
 }
 
 .progress-bar {
-  width: 100%;
+  width: 90% center;
   background-color: #ddd;
   height: 30px;
   border-radius: 10px;
@@ -265,8 +262,51 @@ h2 {
   margin-top: 30px;
 }
 
+.progress-bar .skill {
+  background-color:   red;
+  color: white;
+  padding: 5px;
+}
+
 .skill {
   height: 100%;
-  background-color: #f90a0a;
+  background-color: #fa0303;
   float: left;
+}
+
+.headline {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex: 1 1 100%;
+}
+
+.headline button {
+  margin-top: 50px;
+  padding: 9px 20px;
+  font-size: 20px;
+  border: red;
+  background-color: transparent;
+  outline: none;
+  transition: all 0.3s ease;
+  flex: 1;
+  border: 2px solid transparent;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.headline button:hover,
+.btn-active {
+  color: white;
+  background-color: #191a1c;
+}
+
+.btn-active {
+  border-color: red;
+}
+#education-btn {
+    border-color: red;
 }
