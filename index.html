@@ -25,35 +25,41 @@
           </div>
         </div>
       </nav>
-      <section id="home">
+
+
+<section id="home" class="text-light" style="margin-bottom: 120px;">
         <div class="row">
-        <div class="col-6">
-      <div class="text-light mx-3 intro fw-bolder">
+        <div class="col-6 intro1">
+      <div class=" mx-3 intro fw-bolder">
       
         <h5>WELCOME TO MY WORLD</h5>
         
         <h1 class="i">Hi, I'm <span class="name">Punam Navale</span></h1>
       </div>
       
-        <div class="animation-container mx-3 text-light" style="display: flex;">
+        <div class="animation-container mx-3 " style="display: flex;">
             <p>a<span style="margin-right: 10px;"></span></p>
-            <div class="sentence text-light"></div>
+            <div class="sentence "></div>
         </div>
         
         
-        <div class="text-light  mx-3 fs-5">
+        <div class="  mx-3 fs-5">
             <p>
                 Hi, I'm Punam Anna Navale, a third-year CSE student at VIIT, Pune. I'm a tech enthusiast who loves coding and solving DSA problems. I've worked on projects like an e-commerce website and a personal portfolio website. I've solved over 280 DSA problems on Leetcode.Currenty I'm Working on the ML project - Crop Recommendation System.
             </p>
         </div>
         </div>
-        <div class="col-6 ">
-            <div  class="circle circle2 c1">
-            
-            <img src="Professional_PN1.jpg" alt="" width="350" height="420">
+
+    <div class="circle-con col-6 my-3">
+        <div class="outer-circle" id="outerCircle">
+            <div class="inner-circle">
+                <img class="adjustable-image" src="Professional_PN1.jpg" alt="Adjustable Image">
             </div>
         </div>
     </div>
+
+
+
 
         <div>    
         
@@ -80,12 +86,12 @@
 </div>
 </section>
 
-<div class="custom-line"></div>
+
 
 
     <section class="m" id="features">
         <h4>FEATURES</h4>
-        <h1>What I Do</h1>
+        <h1 class="text-light">What I Do</h1>
         <div class="container" style="margin-top: 30px;">
 
 
@@ -133,7 +139,7 @@
 
     </section>
 
-    <div class="custom-line"></div>
+
 
     <section class="m" id="project">
         <h4>PROJECTS</h4>
@@ -192,7 +198,7 @@
         </div>
 
         <div class="box1">
-            <img src="https://program-ace.com/wp-content/uploads/computer-vision-1.jpg" alt="Image">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.UA_E4DsT740kgtZGyWCWagHaE7&pid=Api&P=0&h=180" alt="Image">
 
 
             <div class="content text-light">
@@ -221,7 +227,7 @@
 
     </section>
 
-    <div class="custom-line"></div>
+
 
     <section class="m" id="resume">
         <div class="text-center">
@@ -229,7 +235,7 @@
                 <h4>FRESHER</h4>
             </div>
             <div>
-                <h1> My Resume</h1>
+                <h1 class="text-light"> My Resume</h1>
             </div>
         </div>
        
@@ -299,7 +305,7 @@
        
     </section>
 
-    <div class="custom-line"></div>
+
 
     <section class="m" id="contact">
         <div class="text-center">
@@ -307,15 +313,15 @@
                 <h4>CONTACT</h4>
             </div>
             <div>
-                <h1>Contact with me</h1>
-            <div>
+                <h1 class="text-light">Contact with me</h1>
+            </div>
         </div>
 
-        <div class="row">
+        <div class="Contact container">
         <div class=" col-6">
-        <div class=" row container mt-5" style="margin-left : 100px;">
+        <div class=" row container mt-5" >
 
-            <div class="box3 col-5">
+            <div class="box3">
                 <img src="https://scx2.b-cdn.net/gfx/news/hires/2018/handshake.jpg" alt="Image" height="250px">
     
                 <div class=" text-light mt-3" style="text-align: left;">
@@ -337,11 +343,11 @@
             </div>
             </div>
             <div class="col-6">
-            <div class="row container2 ">
+            <div class="row container2">
      
-                <div class="box3 col-7 ">
-                    <div class="fw-3 text-light b5">
-                    <p>Please feel free to contact me. <span class="b6"> And share your valuable Feedback</span></p>
+                <div class="box3">
+                    <div class=" text-light b5">
+                    <p>Please feel free to contact me.<p>And share your valuable Feedback</p></p>
                     </div>
                 </div>
     
@@ -350,76 +356,11 @@
         </div>
     </section>
 
-    <div class="custom-line"></div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <script >
-        const sentences = [
-        " Tech enthusiast",
-        " Web developer",
-        " Professional coder",
-    ];
-    
-    const sentenceElement = document.querySelector(".sentence");
-    let currentIndex = 0;
-    
-    function updateSentence() {
-        sentenceElement.textContent = sentences[currentIndex];
-        currentIndex = (currentIndex + 1) % sentences.length;
-    }
-    
-    setInterval(updateSentence, 4000); 
-    updateSentence();
-
-        // JavaScript to toggle between education and skills sections
-        document.addEventListener("DOMContentLoaded", function() {
-            const educationButton = document.getElementById('education-btn');
-            const skillsButton = document.getElementById('skills-btn');
-            const educationSection = document.querySelector('.row');
-            const skillsSection = document.querySelector('.skills-container');
-            
-            educationSection.style.display = 'flex'; // Education section is displayed by default
-            skillsSection.style.display = 'none'; // Skills section is hidden by default
-    
-            educationButton.addEventListener('click', function() {
-                educationButton.classList.add('btn-active');
-                skillsButton.classList.remove('btn-active');
-                educationSection.style.display = 'flex';
-                skillsSection.style.display = 'none';
-                skillsButton.style.borderColor = 'transparent';
-                educationButton.style.borderColor = 'red';
-            });
-            
-            skillsButton.addEventListener('click', function() {
-                skillsButton.classList.add('btn-active');
-                educationButton.classList.remove('btn-active');
-                educationSection.style.display = 'none';
-                skillsSection.style.display = 'block';
-                educationButton.style.borderColor = 'transparent';
-                skillsButton.style.borderColor = 'red';
-            });
-        });
-
-
-
-        const educationBtn = document.getElementById('education-btn');
-    const skillsBtn = document.getElementById('skills-btn');
-    const educationSection = document.querySelector('.education-section');
-    const skillsSection = document.querySelector('.skills-section');
-
-    educationBtn.addEventListener('click', () => {
-        educationSection.style.display = 'block';
-        skillsSection.style.display = 'none';
-    });
-
-    skillsBtn.addEventListener('click', () => {
-        educationSection.style.display = 'none';
-        skillsSection.style.display = 'block';
-    });
-
-
-    </script>
+    <script src="script.js"></script>
     
   </body>
 </html>
